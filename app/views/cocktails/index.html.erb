@@ -1,0 +1,17 @@
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-product">
+      <%= image_tag cocktail.image_url, alt: "alttext" %>
+      <div class="card-product-infos">
+        <h2><%= cocktail.name %></h2>
+        <p> <% cocktail.stars.times do %>
+              <i class='fas fa-star active'></i>
+            <% end %>
+            <% (5 - cocktail.stars).times do %>
+              <i class='fas fa-star'></i>
+            <% end %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>

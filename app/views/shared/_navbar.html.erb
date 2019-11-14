@@ -1,0 +1,20 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <%= image_tag image_path("logo.svg"), alt: "logo", width: 100 %>
+    <h1>Les Cocktails de Chatons</h1>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse d-flex align-items-center" id="navbarSupportedContent">
+      <%= simple_form_for :search, url: cocktails_path, method: :get do |f| %>
+        <div class="search-form-control form-group">
+          <input class="form-control string required" type="text" name="search[query]" id="search_query" placeholder="Search..." />
+        </div>
+      <% end %>
+      <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-ghost ml-2" %>
+    </ul>
+  </div>
+</div>

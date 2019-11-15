@@ -1,8 +1,8 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <a class="navbar-brand d-flex align-items-center" href="#">
+  <%= link_to cocktails_path, class: "navbar-brand d-flex align-items-center" do %>
     <%= image_tag image_path("logo.svg"), alt: "logo", width: 100 %>
     <h1>Les Cocktails de Chatons</h1>
-  </a>
+  <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

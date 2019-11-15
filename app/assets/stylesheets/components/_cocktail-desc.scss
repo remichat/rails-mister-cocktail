@@ -1,0 +1,14 @@
+.cocktail-desc {
+  & ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  & .cover {
+    margin: 10px;
+  }
+}

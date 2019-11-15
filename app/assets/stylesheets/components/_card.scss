@@ -1,14 +1,21 @@
 .card-product {
   overflow: hidden;
   height: 150px;
-  background-color: #222222;
+  // background-color: #222222;
+  background-color: transparent;
   // box-shadow: 0 0 15px rgba(90,90,90,0.2);
   display: flex;
   align-items: center;
   margin: 15px;
   border-radius: 75px;
+  border: 3px solid white;
+  transition: 0.3s ease;
   i.active {
-    color: #FFCC16;
+    color: $orange-cool;
+  }
+  &:hover {
+    opacity: 0.7;
+    text-decoration: none;
   }
 }
 

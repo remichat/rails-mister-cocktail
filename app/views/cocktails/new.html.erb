@@ -2,8 +2,10 @@
 
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
   <%= f.input :stars %>
+  <%= f.input :passphrase , input_html: {placeholder: "You can't ruin my cocktails without the passphrase"} %>
+
+  <%= f.input :photo, as: :file, required: true %>
 
   <%= f.submit class: "btn btn-primary" %>
 <% end %>

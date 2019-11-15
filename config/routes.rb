@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   end
 
   resources :doses, only: :destroy
+
+  get '/checkpassword/:password', to: "passwords#check"
 end
